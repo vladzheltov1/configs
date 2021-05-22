@@ -53,7 +53,7 @@
     "prettier.eslintIntegration": true,
     "prettier.stylelintIntegration": true,
     "prettier.tslintIntegration": true,
-    "eslint.autoFixOnSave": true, // (even though VSCode has this as deprecated), have tried with and without this line
+    "eslint.autoFixOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true
