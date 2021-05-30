@@ -3,7 +3,7 @@
 ## Extensions:
 - .ejs
 - 30 seconds of code
-- Aye
+- Ayu
 - Babel JavaScript
 - Beautify
 - Bracket Pair Colorizer
