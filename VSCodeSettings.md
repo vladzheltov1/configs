@@ -2,60 +2,67 @@
 
 ## Extensions:
 - 30 seconds of code
-- Ayu
+- Auto Close Tag
+- Auto Rename Tag
 - Babel JavaScript
 - Beautify
 - Bracket Pair Colorizer
 - DotENV
+- ES7 React/Redux ...
 - ESLint
 - GitLens
-- HTML Snippets
+- HTML CSS Support
+- JavaScript (ES6) code snippets
+- JS JSX Snippets
+- Jupiter
 - Live Server
-- Node.js Modules Intellisense
+- Material Icon Theme
+- node-snippets
+- npm
+- npm Intellisense
+- Sass
+- SCSS Formatter
+- SCSS Intellisense
 - Simple React Snippets
 - TSLint
 - Visual Studio IntelliCode
-- Material Icons
 
 ## Settings:
 
 ```
-
 {
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Ayu Dark Bordered",
     "vsicons.dontShowNewVersionMessage": true,
     "search.useGlobalIgnoreFiles": true,
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "php.validate.executablePath": "H:/OS/OpenServer/modules/php/PHP_7.4/php.exe",
-    "files.associations": {
-        "*.ejs": "html"
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.sii": "default"
     },
-    "window.zoomLevel": 1,
-    "editor.fontSize": 16,
     "beautify.ignore": "",
     "prettier.eslintIntegration": true,
     "prettier.stylelintIntegration": true,
     "prettier.tslintIntegration": true,
-    "eslint.autoFixOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true
     },
     "editor.formatOnSave": true,
     "diffEditor.codeLens": true,
-    "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+    "editor.fontFamily": "\"Fira Code\", 'Courier New', monospace",
+    "editor.fontWeight": "400",
     "terminal.integrated.fontFamily": "Consolas",
-    "editor.fontLigatures": null
+    "editor.cursorStyle": "line",
+    "editor.fontLigatures": null,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 16,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "code-runner.runInTerminal": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "python.formatting.provider": "black",
+    "C_Cpp.updateChannel": "Insiders"
 }
-
 ```
