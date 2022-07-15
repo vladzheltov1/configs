@@ -5,33 +5,13 @@
 - Auto Close Tag
 - Auto Rename Tag
 - Babel JavaScript
-- Beautify
-- DotENV
-- ES7 React/Redux ...
 - ESLint
 - GitLens
-- glean
-- HTML CSS Support
-- JavaScript (ES6) code snippets
-- JS JSX Snippets
-- Jupiter
-- Live Server
-- Markdown All in One
-- Markdown Preview Enhanced
+- IntelliCode
 - Material Icon Theme
+- Quokka.js
 - Monokai Pro
-- node-snippets
-- npm
-- npm Intellisense
-- Prettier - Code formatter
 - Sass
-- SCSS Formatter
-- SCSS Intellisense
-- Simple React Snippets
-- Todo Tree
-- TSLint
-- Visual Studio IntelliCode
-- Wallaby.js
 
 ## settings.json:
 
