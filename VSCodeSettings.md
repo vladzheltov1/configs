@@ -6,6 +6,7 @@
 - Auto Rename Tag
 - Babel JavaScript
 - ESLint
+- GitHub Pull Requests and Issues
 - GitLens
 - IntelliCode
 - Material Icon Theme
