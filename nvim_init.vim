@@ -8,13 +8,12 @@
 
 call plug#begin()
 
-Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://github.com/tpope/vim-commentary'
-Plug 'https://github.com/ap/vim-css-color'
-Plug 'https://github.com/tc50cal/vim-terminal'
-Plug 'httpgs://github.com/preservim/tagbar'
-Plug 'https://github.com/morhetz/gruvbox'
+Plug 'https://github.com/vim-airline/vim-airline' " Fancy statusbar
+Plug 'https://github.com/preservim/nerdtree'      " Directory tree
+Plug 'https://github.com/tpope/vim-commentary'    " Commentary
+Plug 'https://github.com/ap/vim-css-color'        " CSS color preview
+Plug 'https://github.com/tc50cal/vim-terminal'    " Terminal
+Plug 'https://github.com/morhetz/gruvbox'         " Theme
 
 set encoding=UTF-8
 
@@ -25,6 +24,19 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+" Open search on F2
+noremap <F2> :NERDTreeFocus <BAR> call feedkeys('/') <CR>
+
+" Save on ctrl+s
+imap <C-s> <esc>:w<CR>
+
+" Save and Exit on F5
+imap <F5> <esc>:wqa<CR>
+nmap <F5> <esc>:wqa<CR>
+
+" Focus
+nmap <C-S-e> <esc>:wincmd p<CR>
+
 " Auto close braces
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -32,15 +44,9 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
-" Save on ctrl+s
-imap <C-s> <esc>:w<CR>
-
-" Show Tagbar on F8
-nmap <F8> :TagbarToggle<CR>
-
 " Colorscheme
 set termguicolors
-let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
 hi LspCxxHlGroupMemberVariable guifg=#83a598
