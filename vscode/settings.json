@@ -10,6 +10,7 @@
     "editor.snippetSuggestions": "none",
     "editor.cursorStyle": "line-thin",
     "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
@@ -185,5 +186,4 @@
         }
       ]
     },
-    "workbench.iconTheme": "vscode-icons",
   }
