@@ -1,20 +1,23 @@
 {
     // Editor configuration
-    "editor.fontFamily": "\"Cascadia Mono\", \"PragmataPro\", \"Fira Code\", \"Consolas\", 'Courier New', monospace",
+    "editor.fontFamily": "\"Pragmata Pro Mono\", \"Fira Code\", \"Consolas\", 'Courier New', monospace",
     "editor.fontSize": 14,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.fontLigatures": false,
+    "editor.cursorBlinking": "solid",
     "editor.suggest.showWords": false,
     "editor.wordBasedSuggestions": false,
     "editor.bracketPairColorization.enabled": true,
-    "editor.snippetSuggestions": "none",
     "editor.cursorStyle": "line-thin",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Bearded Theme Anthracite",
+    "workbench.iconTheme": "bearded-icons",
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
     "window.zoomLevel": 1,
+
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
 
     // Action on save
     "editor.codeActionsOnSave": {
@@ -26,31 +29,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-
-    // Terminal
-    "terminal.integrated.fontFamily": "Cascadia Mono",
-    "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
-    "terminal.explorerKind": "external",
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "workbench.colorCustomizations": {
-      "terminal.background": "#090300",
-      "terminal.foreground": "#A5A2A2",
-      "terminalCursor.background": "#A5A2A2",
-      "terminalCursor.foreground": "#A5A2A2",
-      "terminal.ansiBlack": "#090300",
-      "terminal.ansiBlue": "#01A0E4",
-      "terminal.ansiBrightBlack": "#5C5855",
-      "terminal.ansiBrightBlue": "#01A0E4",
-      "terminal.ansiBrightCyan": "#B5E4F4",
-      "terminal.ansiBrightGreen": "#01A252",
-      "terminal.ansiBrightRed": "#DB2D20",
-      "terminal.ansiBrightWhite": "#F7F7F7",
-      "terminal.ansiBrightYellow": "#FDED02",
-      "terminal.ansiGreen": "#01A252",
-      "terminal.ansiRed": "#DB2D20",
-      "terminal.ansiWhite": "#A5A2A2",
-      "terminal.ansiYellow": "#FDED02"
-    },
 
     // Stuff
     "editor.suggestSelection": "first",
@@ -186,4 +164,4 @@
         }
       ]
     },
-  }
+}
