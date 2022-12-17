@@ -4,6 +4,8 @@
 - Auto Close Tag
 - Auto Rename Tag
 - Babel JavaScript
+- Code Spell Checker
+- Dainty -> Oceanic Next
 - DotENV
 - Git History
 - GitLense
