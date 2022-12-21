@@ -3,4 +3,5 @@
     {"key": "ctrl+m", "command": "editor.action.showHover"},
     {"key": "ctrl+shift+up", "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus"},
     {"key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus"},
+    {"key": "ctrl+d", "command": "editor.action.goToDeclaration", "when": "editorTextFocus"}
 ]
