@@ -8,20 +8,21 @@
     "editor.suggest.showWords": false,
     "editor.wordBasedSuggestions": false,
     "editor.bracketPairColorization.enabled": true,
-    "editor.cursorStyle": "line-thin",
-    "workbench.colorTheme": "Bearded Theme Anthracite",
+    "editor.mouseWheelZoom": true,
     "workbench.iconTheme": "bearded-icons",
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1,
 
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
 
+    "java.configuration.runtimes": [{"name": "JavaSE-17", "path": "//usr//local//lib//java//jdk17"}],
+    "java.inlayHints.parameterNames.enabled": "none",
+
     // Action on save
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
+      "source.sortImports": true,
       "source.fixAll.eslint": true
     },
     "diffEditor.codeLens": true,
@@ -29,6 +30,9 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
     // Stuff
     "editor.suggestSelection": "first",
@@ -48,6 +52,7 @@
       "Cascadia",
       "Consolas",
       "Fira",
+      "middlewares",
       "Monokai",
       "monospace"
     ],
@@ -164,4 +169,8 @@
         }
       ]
     },
+    "workbench.colorTheme": "Dainty – Oceanic Next",
+    "editor.cursorStyle": "line-thin",
+    "editor.unicodeHighlight.includeStrings": false,
+    "window.zoomLevel": 1,
 }
