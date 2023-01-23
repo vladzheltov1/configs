@@ -1,0 +1,5 @@
+require 'vladzht1/ui/git'
+require 'vladzht1/ui/terminal'
+require 'vladzht1/ui/barbar'
+require 'vladzht1/ui/dashboard'
+require 'vladzht1/ui/telescope'
