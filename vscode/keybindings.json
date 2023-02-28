@@ -1,8 +1,26 @@
 [
   {"key": "ctrl+n", "command": "explorer.newFile", "when": "explorerViewletFocus"},
   {"key": "ctrl+m", "command": "editor.action.showHover"},
-  {"key": "ctrl+shift+up", "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus"},
-  {"key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus"},
   {"key": "ctrl+shift+i", "command": "editor.action.organizeImports", "when": "editorTextFocus"},
-  {"key": "ctrl+d", "command": "editor.action.goToDeclaration", "when": "editorTextFocus"}
+  {"key": "ctrl+d", "command": "editor.action.goToDeclaration", "when": "editorTextFocus"},
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "args": {
+        "to": "up",
+        "by": "line",
+        "value": 10
+    },
+    "when": "editorTextFocus"
+  },
+  {
+      "key": "ctrl+down",
+      "command": "cursorMove",
+      "args": {
+          "to": "down",
+          "by": "line",
+          "value": 10
+      },
+      "when": "editorTextFocus"
+  },
 ]
