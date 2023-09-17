@@ -1,8 +1,10 @@
 {
-  // Editor configuration
-  "editor.fontFamily": "\"JetBrains Mono\", \"Pragmata Pro Mono\", \"Encode Sans Regular\", \"Roboto Mono\", \"Consolas\", monospace",
-  "editor.fontSize": 18,
+  // Editor
+  "editor.fontFamily": "\"Pragmata Pro Mono\", \"JetBrains Mono\", \"Encode Sans Regular\", \"Roboto Mono\", \"Consolas\", monospace",
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "editor.cursorSurroundingLines": 8,
   "editor.fontLigatures": false,
   "editor.cursorBlinking": "solid",
   "editor.suggest.showWords": false,
@@ -10,66 +12,89 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.unicodeHighlight.includeStrings": false,
   "editor.mouseWheelZoom": true,
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
-  "workbench.editor.untitled.hint": "hidden",
-  // "editor.cursorStyle": "underline",
-  "security.workspace.trust.untrustedFiles": "open",
-  "explorer.confirmDelete": false,
+  "editor.smartSelect.selectSubwords": true,
+  "editor.suggestSelection": "first",
   "editor.snippetSuggestions": "none",
   "editor.smoothScrolling": true,
   "editor.stickyScroll.maxLineCount": 5,
   "editor.mouseWheelScrollSensitivity": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.unicodeHighlight.allowedLocales": { "ru": true },
+  "editor.codeActionsOnSave": {
+    "source.sortImports": true,
+    "source.fixAll.eslint": true
+  },
+
+  // Workbench
+  "workbench.colorTheme": "One Monokai",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "bearded-icons",
+  "window.menuBarVisibility": "toggle",
+
+  // Terminal
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.defaultProfile.linux": "fish",
-  "editor.cursorSurroundingLines": 8,
-  // "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // Rust
+  // Files
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+
+  // Git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+
+  // Settings
+  "diffEditor.codeLens": true,
+  "explorer.confirmDelete": false,
+  "search.useGlobalIgnoreFiles": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
+
+  // Languages
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.hideClosureInitialization": false,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "never",
   "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": false,
-  // Action on save
-  "editor.codeActionsOnSave": {
-    "source.sortImports": true,
-    "source.fixAll.eslint": true
-  },
-  "diffEditor.codeLens": true,
+  "rust-analyzer.diagnostics.useRustcErrorCode": false,
+
+  "dotnetAcquisitionExtension.existingDotnetPath": [
+    {
+      "extensionId": "msazurermtools.azurerm-vscode-tools",
+      "path": "~/.dotnet/dotnet"
+    }
+  ],
+
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
+  "vue.inlayHints.optionsWrapper": false,
+
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  // Java
-  "java.inlayHints.parameterNames.enabled": "none",
-    
-  // Vue
-  "vue.inlayHints.optionsWrapper": false,
 
-  // Stuff
-  "editor.suggestSelection": "first",
-  "search.useGlobalIgnoreFiles": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  },
+
   // Extensions settings
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "tabnine.experimentalAutoImports": true,
-  // Git
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  // Spell checker
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
   "cSpell.language": "en,ru",
-  "cSpell.userWords": [
-    "Cascadia",
-    "Consolas",
-    "Fira",
-    "middlewares",
-    "Monokai",
-    "monospace"
-  ],
+
   // Remove cursive characters
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -182,27 +207,8 @@
       }
     ]
   },
-  "window.menuBarVisibility": "toggle",
-  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
-  "editor.unicodeHighlight.allowedLocales": {
-    "ru": true
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "git.openRepositoryInParentFolders": "never",
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "workbench.iconTheme": "bearded-icons",
-  "window.zoomLevel": -1,
-  "[ruby]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "Shopify.ruby-lsp"
-  },
-  "files.insertFinalNewline": true,
-  "editor.rulers": [
-    120
-  ]
+  "C_Cpp.intelliSenseEngine": "disabled"
 }
