@@ -1,35 +1,38 @@
 {
   // Editor
-  "editor.fontFamily": "\"Pragmata Pro Mono\", \"JetBrains Mono\", \"Encode Sans Regular\", \"Roboto Mono\", \"Consolas\", monospace",
-  "editor.fontSize": 15,
+  // "editor.fontFamily": "\"Cascadia Mono PL a\", Iosevka Extended, \"Encode Sans Regular\", \"Roboto Mono\", \"Consolas\", monospace",
+  "editor.fontFamily": "\"Pragmata Pro Mono\", monospace",
+  // "editor.fontFamily": "\"JetBrains Mono\", monospace",
+
+  "editor.fontSize": 17,
   "editor.tabSize": 2,
   "editor.rulers": [120],
   "editor.cursorSurroundingLines": 8,
   "editor.fontLigatures": false,
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "expand",
+  "editor.suggestSelection": "first",
   "editor.suggest.showWords": false,
-  "editor.wordBasedSuggestions": false,
+  "editor.suggest.showReferences": true,
+  "editor.snippetSuggestions": "none",
+  "editor.wordBasedSuggestions": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.unicodeHighlight.includeStrings": false,
   "editor.mouseWheelZoom": true,
   "editor.smartSelect.selectSubwords": true,
-  "editor.suggestSelection": "first",
-  "editor.snippetSuggestions": "none",
   "editor.smoothScrolling": true,
   "editor.stickyScroll.maxLineCount": 5,
-  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.mouseWheelScrollSensitivity": 3,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlayHints.enabled": "off",
   "editor.unicodeHighlight.allowedLocales": { "ru": true },
   "editor.codeActionsOnSave": {
-    "source.sortImports": true,
-    "source.fixAll.eslint": true
+    "source.sortImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
-
-  // Workbench
-  "workbench.colorTheme": "One Monokai",
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "bearded-icons",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "window.menuBarVisibility": "toggle",
 
   // Terminal
@@ -40,18 +43,21 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  "files.eol": "\n",
 
   // Git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
+  "scm.experimental.showHistoryGraph": true,
 
   // Settings
   "diffEditor.codeLens": true,
   "explorer.confirmDelete": false,
   "search.useGlobalIgnoreFiles": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+  "prettier.printWidth": 120,
 
   // Languages
   "rust-analyzer.inlayHints.typeHints.enable": false,
@@ -77,6 +83,8 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
 
+  "auto-close-tag.disableOnLanguage": ["typescript"],
+
   "[python]": {
     "editor.formatOnType": true
   },
@@ -90,125 +98,67 @@
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
 
-  // Extensions settings
-  "tabnine.experimentalAutoImports": true,
-  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
-  "cSpell.language": "en,ru",
-
-  // Remove cursive characters
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "comment.block",
-          "comment.block.documentation",
-          "comment.line",
-          "constant",
-          "constant.character",
-          "constant.character.escape",
-          "constant.numeric",
-          "constant.numeric.integer",
-          "constant.numeric.float",
-          "constant.numeric.hex",
-          "constant.numeric.octal",
-          "constant.other",
-          "constant.regexp",
-          "constant.rgb-value",
-          "emphasis",
-          "entity",
-          "entity.name",
-          "entity.name.class",
-          "entity.name.function",
-          "entity.name.method",
-          "entity.name.section",
-          "entity.name.selector",
-          "entity.name.tag",
-          "entity.name.type",
-          "entity.other",
-          "entity.other.attribute-name",
-          "entity.other.inherited-class",
-          "invalid",
-          "invalid.deprecated",
-          "invalid.illegal",
-          "keyword",
-          "keyword.control",
-          "keyword.operator",
-          "keyword.operator.new",
-          "keyword.operator.assignment",
-          "keyword.operator.arithmetic",
-          "keyword.operator.logical",
-          "keyword.other",
-          "markup",
-          "markup.bold",
-          "markup.changed",
-          "markup.deleted",
-          "markup.heading",
-          "markup.inline.raw",
-          "markup.inserted",
-          "markup.italic",
-          "markup.list",
-          "markup.list.numbered",
-          "markup.list.unnumbered",
-          "markup.other",
-          "markup.quote",
-          "markup.raw",
-          "markup.underline",
-          "markup.underline.link",
-          "meta",
-          "meta.block",
-          "meta.cast",
-          "meta.class",
-          "meta.function",
-          "meta.function-call",
-          "meta.preprocessor",
-          "meta.return-type",
-          "meta.selector",
-          "meta.tag",
-          "meta.type.annotation",
-          "meta.type",
-          "punctuation.definition.string.begin",
-          "punctuation.definition.string.end",
-          "punctuation.separator",
-          "punctuation.separator.continuation",
-          "punctuation.terminator",
-          "storage",
-          "storage.modifier",
-          "storage.type",
-          "string",
-          "string.interpolated",
-          "string.other",
-          "string.quoted",
-          "string.quoted.double",
-          "string.quoted.other",
-          "string.quoted.single",
-          "string.quoted.triple",
-          "string.regexp",
-          "string.unquoted",
-          "strong",
-          "support",
-          "support.class",
-          "support.constant",
-          "support.function",
-          "support.other",
-          "support.type",
-          "support.type.property-name",
-          "support.variable",
-          "variable",
-          "variable.language",
-          "variable.name",
-          "variable.other",
-          "variable.other.readwrite",
-          "variable.parameter"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "C_Cpp.intelliSenseEngine": "disabled"
+
+  "C_Cpp.intelliSenseEngine": "disabled",
+
+  // Extensions settings
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.enabledInMergeConflict": true,
+  "errorLens.editorHoverPartsEnabled": {
+    "messageEnabled": false,
+    "sourceCodeEnabled": false,
+    "buttonsEnabled": false
+  },
+  "tabnine.experimentalAutoImports": true,
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": ["Dtos", "glfw"],
+  "cmake.showOptionsMovedNotification": false,
+  "files.exclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "files.watcherExclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+
+  // "editor.semanticTokenColorCustomizations": {
+  //   "rules": {
+  //     "class": {
+  //       "foreground": "#EFC262"
+  //     }
+  //     // red: #DA4F46
+  //   }
+  // },
+  // "editor.tokenColorCustomizations": {
+  //   // "keywords": "#DA4F46",
+  //   // "strings": "#EFC262",
+  //   "types": "#EFC262",
+  //   "variables": "#C8C8C8"
+  //   // "textMateRules": [
+  //   //   {
+  //   //     "scope": "meta.block",
+  //   //     "settings": {
+  //   //       "foreground": "#DA4F46"
+  //   //     }
+  //   //   }
+  //   // ]
+  // },
+  "clangd.path": "/home/vladzht1/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+  "workbench.colorTheme": "Best Themes - Andromeda Mariana",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  }
 }
