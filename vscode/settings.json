@@ -4,8 +4,7 @@
   "editor.fontFamily": "\"Pragmata Pro Mono\", monospace",
   // "editor.fontFamily": "\"JetBrains Mono\", monospace",
 
-  "editor.fontSize": 17,
-  "editor.tabSize": 2,
+  "editor.fontSize": 15,
   "editor.rulers": [120],
   "editor.cursorSurroundingLines": 8,
   "editor.fontLigatures": false,
@@ -13,7 +12,7 @@
   "editor.suggestSelection": "first",
   "editor.suggest.showWords": false,
   "editor.suggest.showReferences": true,
-  "editor.snippetSuggestions": "none",
+  // "editor.snippetSuggestions": "none",
   "editor.wordBasedSuggestions": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.unicodeHighlight.includeStrings": false,
@@ -26,18 +25,21 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.inlayHints.enabled": "off",
   "editor.unicodeHighlight.allowedLocales": { "ru": true },
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.codeActionsOnSave": {
     "source.sortImports": "explicit",
     "source.fixAll.eslint": "explicit"
   },
   "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Best Themes - Gruvbox Material Dark",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "window.menuBarVisibility": "toggle",
 
   // Terminal
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.env.linux": {},
 
   // Files
   "files.insertFinalNewline": true,
@@ -49,15 +51,34 @@
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
-  "scm.experimental.showHistoryGraph": true,
 
-  // Settings
+  // Settings/extensions
   "diffEditor.codeLens": true,
   "explorer.confirmDelete": false,
   "search.useGlobalIgnoreFiles": true,
   "security.workspace.trust.untrustedFiles": "open",
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
   "prettier.printWidth": 120,
+  "tabnine.experimentalAutoImports": true,
+  "auto-close-tag.disableOnLanguage": ["typescript"],
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.enabledInMergeConflict": true,
+  "errorLens.editorHoverPartsEnabled": {
+    "messageEnabled": false,
+    "sourceCodeEnabled": false,
+    "buttonsEnabled": false
+  },
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": ["Dtos", "glfw"],
+  "cmake.showOptionsMovedNotification": false,
+  "clangd.path": "/home/vladzht1/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+  "vsicons.dontShowNewVersionMessage": true,
+  "scm.experimental.showHistoryGraph": true,
 
   // Languages
   "rust-analyzer.inlayHints.typeHints.enable": false,
@@ -79,11 +100,14 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "vue.inlayHints.optionsWrapper": false,
 
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[javascript]": {
+    "editor.tabSize": 2
   },
 
-  "auto-close-tag.disableOnLanguage": ["typescript"],
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
 
   "[python]": {
     "editor.formatOnType": true
@@ -100,38 +124,7 @@
 
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-
-  "C_Cpp.intelliSenseEngine": "disabled",
-
-  // Extensions settings
-  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
-  "errorLens.enabledInMergeConflict": true,
-  "errorLens.editorHoverPartsEnabled": {
-    "messageEnabled": false,
-    "sourceCodeEnabled": false,
-    "buttonsEnabled": false
-  },
-  "tabnine.experimentalAutoImports": true,
-  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
-  "cSpell.language": "en,ru",
-  "cSpell.userWords": ["Dtos", "glfw"],
-  "cmake.showOptionsMovedNotification": false,
-  "files.exclude": {
-    "**/.trunk/*actions/": true,
-    "**/.trunk/*logs/": true,
-    "**/.trunk/*notifications/": true,
-    "**/.trunk/*out/": true,
-    "**/.trunk/*plugins/": true
-  },
-  "files.watcherExclude": {
-    "**/.trunk/*actions/": true,
-    "**/.trunk/*logs/": true,
-    "**/.trunk/*notifications/": true,
-    "**/.trunk/*out/": true,
-    "**/.trunk/*plugins/": true
-  },
-  "vsicons.dontShowNewVersionMessage": true,
+  }
 
   // "editor.semanticTokenColorCustomizations": {
   //   "rules": {
@@ -155,10 +148,4 @@
   //   //   }
   //   // ]
   // },
-  "clangd.path": "/home/vladzht1/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
-  "workbench.colorTheme": "Best Themes - Andromeda Mariana",
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "remote.SSH.remotePlatform": {
-    "*.gitpod.io": "linux"
-  }
 }
